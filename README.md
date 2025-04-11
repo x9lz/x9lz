@@ -2,15 +2,15 @@
 2025 Exploitation Management Computer Verification Methods
 </h2>
 
-<h2 align="center">Made by altercation (x9lz), with MAJOR help from:
+<h3 align="center">Made by altercation (x9lz), with MAJOR help from:
 
--   bioluminescent (Epic Games ERRS)
--   Aminey (Epic Games ERRS)
--   Allegiance (Hypixel)
--   Korialites (Hypixel)
--   HW.flows (Hypixel)
+     -   bioluminescent (Epic Games ERRS)
+     -   Aminey (Epic Games ERRS)
+     -   Allegiance (Hypixel)
+     -   Korialites (Hypixel)
+     -   HW.flows (Hypixel)
 
-
+</h3>
   
 
   
@@ -24,46 +24,32 @@
 <h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
 </h3></h3></h3>
 
--   `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\State\UserSettings`
-     > (click on the file ending in 1001)
 
-  <br>
-
--   `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Compatibility Assistant\Store`
-
-  
-
--   `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU`
-
-  
-
--   `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU`
-
-  
-
--   `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\CIDSizeMRU`
-
-  
 
 -   `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Tracing\`
 
-  
 
--   `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU`
-
-  
-
--   `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall`
-
-  
-
--   `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage\AppSwitched`
-
-  
 
 -   `HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet`
 
-  
+
+
+-   `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall`
+
+
+
+-   `HKEY_CLASSES_ROOT\Local Settings\Software\Microsoft\Windows\Shell\MuiCache`
+
+
+
+-   `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU`
+
+
+
+-   `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\State\UserSettings`
+       > (click on the file ending in 1001)
+
+
 
 -   `HKEY_CURRENT_USERSoftware\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths`
 
@@ -75,12 +61,28 @@
 
 -   `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs`
 
+
+
+-   `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\CIDSizeMRU`
+
+
+
+-   `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU`
+
+
+
+-   `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage\AppSwitched`
+
+
+
+-   `HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU`
+
+
   
+-   `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Compatibility Assistant\Store`
 
--   `HKEY_CLASSES_ROOT\Local Settings\Software\Microsoft\Windows\Shell\MuiCache`
 
 
- 
 
 <h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
 
@@ -90,19 +92,19 @@
 </h3></h3></h3>
   
 
--   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\VolumeInfoCache`
 
-  
+-   `Computer\HKEY_LOCAL_MACHINE\SYSTEM\MountedDevices`
+
 
 -   `Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\USBSTOR`
 
   
-
 -   `Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\STORAGE\Volume`
 
-  
 
--   `Computer\HKEY_LOCAL_MACHINE\SYSTEM\MountedDevices`
+-   `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\VolumeInfoCache`
+
+  
 
 <br>  
 
@@ -120,7 +122,7 @@
 
        > Open Command Prompt as an Administrator, type `diskpart` and hit enter, and then type `list volume`. It should show a list of USBs or disk devices.
 
-  
+  <br>
 
 <h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
 
