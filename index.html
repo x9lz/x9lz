@@ -1,0 +1,742 @@
+<p><h1 align="center">
+2025 Exploitation Management Computer Verification Methods
+</h2></p>
+<h3 align="center">Made by altercation (x9lz), with MAJOR help from:
+
+     -   bioluminescent (Epic Games ERRS)
+     -   Aminey (Epic Games ERRS)
+     -   Allegiance (Hypixel)
+     -   Korialites (Hypixel)
+     -   HW.flows (Hypixel)
+
+</h3>
+
+
+
+
+
+
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+<h3 align="center">Registry editor Keys
+
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+</h3></h3></h3>
+
+
+
+<ul>
+<li><code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Tracing\</code></li>
+</ul>
+<ul>
+<li><code>HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet</code></li>
+</ul>
+<ul>
+<li><code>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall</code></li>
+</ul>
+<ul>
+<li><code>HKEY_CLASSES_ROOT\Local Settings\Software\Microsoft\Windows\Shell\MuiCache</code></li>
+</ul>
+<ul>
+<li><code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU</code></li>
+</ul>
+<ul>
+<li><code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\bam\State\UserSettings</code><blockquote>
+<p>(click on the file ending in 1001)</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><code>HKEY_CURRENT_USERSoftware\Microsoft\Windows\CurrentVersion\Explorer\TypedPaths</code></li>
+</ul>
+<ul>
+<li><code>Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\DirectInput\MostRecentApplication</code></li>
+</ul>
+<ul>
+<li><code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs</code></li>
+</ul>
+<ul>
+<li><code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\CIDSizeMRU</code></li>
+</ul>
+<ul>
+<li><code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\OpenSavePidlMRU</code></li>
+</ul>
+<ul>
+<li><code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage\AppSwitched</code></li>
+</ul>
+<ul>
+<li><code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU</code></li>
+</ul>
+<ul>
+<li><code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Compatibility Assistant\Store</code></li>
+</ul>
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+<h3 align="center">USB finding (regedit, event viewer and more)
+
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+</h3></h3></h3>
+
+
+
+<ul>
+<li><code>Computer\HKEY_LOCAL_MACHINE\SYSTEM\MountedDevices</code></li>
+</ul>
+<ul>
+<li><code>Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\USBSTOR</code></li>
+</ul>
+<ul>
+<li><code>Computer\HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\STORAGE\Volume</code></li>
+</ul>
+<ul>
+<li><code>Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Search\VolumeInfoCache</code></li>
+</ul>
+<p><br>  </p>
+<ul>
+<li><a href="https://processhacker.sourceforge.io/nightly.php">Download Process Hacker</a> <blockquote>
+<p>When downloaded, click options, then disk devices, when opened you will be able to see everything they&#39;ve unplugged or ever used on their computer</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p><a href="https://www.nirsoft.net/utils/usb_devices_view.html">Download USB Devices Tool.</a> </p>
+<blockquote>
+<p>Shows unplugged usb devices, can also be used to see if they were using a controller.</p>
+</blockquote>
+<p><br></p>
+</li>
+<li><p><code>cd ~\Desktop &amp; Get-WinEvent Microsoft-Windows-Kernel-PnP/Configuration | findstr 410 usb.log</code> </p>
+<blockquote>
+<p>Open Command Prompt as an Administrator, type <code>diskpart</code> and hit enter, and then type <code>list volume</code>. It should show a list of USBs or disk devices.</p>
+</blockquote>
+<p><br></p>
+</li>
+</ul>
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+<h3 align="center">VPN finding (powershell)
+
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+</h3></h3></h3>  
+
+<ol>
+<li>Run powershell as admin.</li>
+<li>Paste <code>Test-NetConnection</code>.</li>
+<li>Any type of VPN will appear below.</li>
+</ol>
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+<h3 align="center">Process Hacker Various Searches
+
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+</h3></h3></h3>
+
+<blockquote>
+<ul>
+<li>PCAClient <ol>
+<li>Open Process Hacker as admin.</li>
+<li>Search <code>explorer</code>.</li>
+<li>Scan and filter strings with <code>pcaclient</code>.</li>
+<li>Save to a text file and open it.</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li>BFE Search<ol>
+<li>Open Process Hacker as admin.</li>
+<li>Search up <code>BFE</code>.</li>
+<li>Scan and filter strings with <code>UDP QUERY USER</code> <blockquote>
+<p>Will show some .exe&#39;s that were executed under BFE.</p>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li>Analyze CPU Usage<ol>
+<li>Open Process Hacker.</li>
+<li>Search <code>explorer.exe</code>.</li>
+<li>Search and filter strings with cpu usage and analyze the results.</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li><p>Diagtrack search</p>
+<ol>
+<li>Open Process Hacker as admin.</li>
+<li>Search <code>diagtrack</code>.</li>
+<li>Scan for strings. <blockquote>
+<p> This is how we find out if they&#39;ve deleted their journal, ect. You find this out by entering the following as filters in process hacker:</p>
+<blockquote>
+<ul>
+<li>Auto-Elimination code: <code>cmd.exe /C ping 1.1.1.1 -n 1 -w 3000 &gt; Nul &amp; Del /f /q \&quot;%s\&quot;&quot;</code></li>
+</ul>
+</blockquote>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<blockquote>
+<ul>
+<li><p>Journal creation: <code>fsutil usn createjournal m=1000 a=100 c:</code></p>
+</li>
+<li><p>Deleted Regedit values: <code>reg delete</code> </p>
+<blockquote>
+<p>Scan with Regex.</p>
+</blockquote>
+</li>
+<li><p>Diskpart creation: assign letter &amp; volume select</p>
+</li>
+<li><p>Journal Deletion: <code>fsutil usn deletejournal /d c:</code></p>
+</li>
+<li><p>ffmpeg recording: <code>-framerate</code></p>
+</li>
+<li><p>Stopped Services: <code>sc stop</code></p>
+</li>
+<li><p>Replaced file: <code>replace</code></p>
+</li>
+</ul>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li>DLLhost Search<ol>
+<li>Open Process Hacker.</li>
+<li>Search <code>dllhost</code>.</li>
+<li>Scan and filter strings with <code>\users\</code> then <code>.exe</code>.</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li>DNSCache<ol>
+<li>Open Process Hacker.</li>
+<li>Search <code>dns cache</code>.</li>
+<li>Scan and filter the following:<blockquote>
+<ul>
+<li><code>.gg</code></li>
+<li><code>.wtf</code></li>
+<li><code>.cf</code></li>
+<li><code>.in</code></li>
+<li><code>.xyz</code></li>
+<li><code>.pro</code></li>
+<li><code>.net</code></li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li>DPS Service<ol>
+<li>Open Process Hacker.</li>
+<li>Search for DPS service.</li>
+<li>Filter the following:<blockquote>
+<ul>
+<li><code>!!</code><ul>
+<li><code>.exe</code></li>
+</ul>
+</li>
+<li><code>\device\harddiskvolume</code><ul>
+<li><code>.exe</code></li>
+</ul>
+</li>
+<li><code>\users\</code><ul>
+<li>.exe</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li>Event log<ol>
+<li>Open Process Hacker.</li>
+<li>Search up <code>eventlog</code>.</li>
+<li>View the process and look for <code>c:\users</code>.</li>
+<li>Put <code>.exe</code>.</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li>Explorer strings<ol>
+<li>Open Process Hacker.</li>
+<li>Search <code>explorer.exe</code>.</li>
+<li>Scan and filter the following:<blockquote>
+<ul>
+<li><code>{&quot;displayText&quot;</code><ul>
+<li><code>E.</code></li>
+</ul>
+</li>
+<li><code>file:///</code><ul>
+<li><code>.exe</code></li>
+<li><code>.jar</code></li>
+<li><code>.dll</code></li>
+</ul>
+</li>
+<li><code>MonitorProcess</code></li>
+<li><code>.exe.config</code></li>
+<li><code>Zone.Identifier</code></li>
+<li><code>/C:/</code></li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<ul>
+<li>PCASV<ol>
+<li>Open Process Hacker.</li>
+<li>Search for the <code>pcasv</code> process.</li>
+<li>Scan and filter with<blockquote>
+<ul>
+<li><code>TRACE</code><ul>
+<li><code>:\</code></li>
+<li><code>.exe</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li>Save and analyze the results.</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li><h4 id="mpssvc">MPSSVC</h4>
+<ol>
+<li>Open Process Hacker.</li>
+<li>Search for <code>mpssvc</code>.</li>
+<li>Scan and filter with the following:<blockquote>
+<ul>
+<li><code>\device\harddiskvolume</code><ul>
+<li><code>.exe</code></li>
+</ul>
+</li>
+<li><code>UDP Query</code></li>
+<li><code>C:\users</code><ul>
+<li><code>.exe</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<ul>
+<li><p>MSMPENG</p>
+<ol>
+<li>Open Process Hacker as admin.</li>
+<li>Search <code>msmpeng</code> (and here we are going to see what was executed through cmd).</li>
+<li>Scan and filter with the following:<blockquote>
+<ul>
+<li>Auto-Elimination code: <code>cmd.exe /C ping 1.1.1.1 -n 1 -w 3000 &gt; Nul &amp; Del /f /q \&quot;%s\&quot;&quot;</code></li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<blockquote>
+<ul>
+<li><p>Journal creation: <code>fsutil usn createjournal m=1000 a=100 c:</code></p>
+</li>
+<li><p>VSSAdmin shadows deletion: <code>vssadmin delete shadows</code></p>
+</li>
+<li><p>Deleted Regedit values: <code>reg delete</code> </p>
+<blockquote>
+<p>Scan with Regex.</p>
+</blockquote>
+</li>
+<li><p>Diskpart creation: assign letter &amp; volume select</p>
+</li>
+<li><p>Journal Deletion: <code>fsutil usn deletejournal /d c:</code></p>
+</li>
+<li><p>replaced file (type) type  </p>
+<blockquote>
+<p>Scan with Regex.</p>
+</blockquote>
+</li>
+<li><p>ffmpeg recording: <code>-framerate</code></p>
+</li>
+<li><p>Stopped Services: <code>sc stop</code></p>
+</li>
+<li><p>Replaced file: <code>replace</code></p>
+</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li>Runtime Broker<ol>
+<li>Open Process Hacker.</li>
+<li>Search and scan <code>RuntimeBroker.exe</code>.</li>
+<li>Filter with:<blockquote>
+<ul>
+<li><code>C:\Users\</code><ul>
+<li><code>.exe</code></li>
+</ul>
+</li>
+<li><code>File://</code><ul>
+<li><code>.exe</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<ul>
+<li>SearchApp<ol>
+<li>Open Process Hacker.</li>
+<li>Search and scan <code>SearchApp.exe</code>.</li>
+<li>Filter the following:<blockquote>
+<ul>
+<li><code>System.Title</code><ul>
+<li><code>.exe</code></li>
+</ul>
+</li>
+<li><code>:\</code><ul>
+<li><code>.exe</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li>SearchIndexer<ol>
+<li>Open Process Hacker.</li>
+<li>Search and scan <code>SearchIndexer.exe</code>.</li>
+<li>Filter with the following:<blockquote>
+<ul>
+<li><code>DESKTOP</code></li>
+<li><code>C:/Users/</code></li>
+<li><code>file:</code></li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<ul>
+<li>SGRM Broker<ol>
+<li>Open Process Hacker.</li>
+<li>Search and scan <code>sgrmbroker</code>.</li>
+<li>Filter with processID.</li>
+<li>Upload to <a href="https://echo.ac/sgrm">Echo</a>.</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br>  </p>
+<blockquote>
+<ul>
+<li>SiHost<ol>
+<li>Open Process Hacker.</li>
+<li>Search and scan <code>sihost</code>.</li>
+<li>Filter with:<blockquote>
+<ul>
+<li><code>n:</code><ul>
+<li><code>.exe</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<ul>
+<li>SmartScreen<ol>
+<li>Open Process Hacker.</li>
+<li>Search and scan <code>Smartscreen.exe</code>.</li>
+<li>Separate the values below:<blockquote>
+<ul>
+<li><code>scenario</code></li>
+<li><code>appcontrol</code></li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p>  <br></p>
+<blockquote>
+<ul>
+<li>SysMain<ol>
+<li>Open Process Hacker.</li>
+<li>Search and scan <code>sysmain</code>.</li>
+<li>Filter with: <blockquote>
+<ul>
+<li><code>\device\harddisk</code> <ul>
+<li><code>.exe</code></li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+<h3 align="center">Command Prompt Methods
+
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+</h3></h3></h3>  
+
+<ul>
+<li><code>dir/b/s c:\users *.jar</code></li>
+<li><code>dir/b/s c:\users *.dll</code></li>
+<li><code>dir/b/s c:\users *.exe</code></li>
+</ul>
+<p><br>  </p>
+<blockquote>
+<p>  Diskpart</p>
+<ul>
+<li>Open cmd as admin.</li>
+<li>Type <code>diskpart</code></li>
+<li>Press enter.</li>
+<li>Type <code>list volume</code>. It should show a list of USB or disk devices.</li>
+</ul>
+</blockquote>
+<p>  <br></p>
+<ul>
+<li><code>cd c:\Users\%username%\Downloads</code></li>
+</ul>
+<ul>
+<li><p><code>findstr /m /c:&quot;!This program cannot be run in DOS mode.&quot; &quot;*&quot; 2&gt;nul</code></p>
+<p><br></p>
+</li>
+<li><p><code>tasklist</code> </p>
+<blockquote>
+<p>(shows active tasks)</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><code>tree</code> <blockquote>
+<p>  Shows files created or modified.</p>
+</blockquote>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li><code>cd c:\users\%username%\desktop &amp;&amp; echo============= old file name ======== &gt;&gt; FIlesRNO.txt &amp;&amp; fsutil usn readjournal c: csv | findstr /i /c:.exe | findstr /i /c:0x00001000 &gt;&gt; FIlesRNO.txt &amp;&amp; echo ============= new name files ========= &gt;&gt; FIlesRNO.txt &amp;&amp; fsutil usn readjournal c: csv | findstr /i /c:.exe | findstr /i /c:0x00002000 &gt;&gt; FIlesRNO.txt</code></li>
+</ul>
+<ul>
+<li><code>cd c:\users\%username%\desktop &amp;&amp; fsutil usn readjournal c: csv | findstr /i /C:&quot;.pf&quot; | findstr /i /C:&quot;%date%&quot; | findstr /i /C:&quot;net&quot; /i /C:&quot;net1&quot; &gt;&gt; ProcessR.txt &amp;&amp; notepad ProcessR.txt</code></li>
+</ul>
+<ul>
+<li><code>cd c:\users\%username%\desktop &amp;&amp; fsutil usn readjournal c: csv | findstr /i /C:&quot;.pf&quot; | findstr /i /C:&quot;0x80000200&quot; &gt;&gt; DeletedPF.txt &amp;&amp; notepad DeletedPF.txt</code></li>
+</ul>
+<ul>
+<li><code>cd c:\users\%username%\desktop &amp;&amp; fsutil usn readjournal c: csv | findstr /i /c:.exe | findstr /i /c:0x00002000 &gt;&gt; NEWNF.txt &amp;&amp; notepad NEWNF.txt</code></li>
+</ul>
+<ul>
+<li><code>cd c:\users\%username%\desktop &amp;&amp; fsutil usn readjournal c: csv | findstr /i /c:.exe | findstr /i /c:0x00001000 &gt;&gt; OLDNF.txt &amp;&amp; notepad OLDNF.txt</code></li>
+</ul>
+<ul>
+<li><code>cd c:\users\%username%\desktop &amp;&amp; fsutil usn readjournal c: csv | findstr /i /c:.exe | findstr /i /c:0x00000100 &gt;&gt; CreatedF.txt &amp;&amp; notepad CreatedF.txt</code></li>
+</ul>
+<ul>
+<li><code>cd c:\users\%username%\desktop &amp;&amp; fsutil usn readjournal c: csv | findstr /i /c:.exe | findstr /i /c:0x80000200 &gt;&gt; DeletedF.txt &amp;&amp; notepad DeletedF.txt</code></li>
+</ul>
+<ul>
+<li><code>fsutil usn readjournal c: csv | findstr /i /c:.meta | findstr /i /c:0x80000200 &gt;&gt; DeletedMeta.txt</code></li>
+</ul>
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+<h3 align="center">Powershell Methods
+
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+  </h3></h3></h3>
+
+<ul>
+<li><code>Get-ChildItem -Path $shareName | Where-Object { $_.psIsContainer -eq $true }</code></li>
+</ul>
+<ul>
+<li><code>get-service | where-object {$_.status -eq &#39;stopped&#39;}</code></li>
+</ul>
+<ul>
+<li><code>get-service | findstr -i &quot;pcasvc&quot;; get-service | findstr -i &quot;DPS&quot;; get-service | findstr -i &quot;Diagtrack&quot;; get-service | findstr -i &quot;sysmain&quot;; get-service | findstr -i &quot;eventlog&quot;; get-service | findstr -i &quot;sysmain&quot;; get-service | findstr -i &quot;eventlog&quot;</code></li>
+</ul>
+<ul>
+<li>Powershell History: <blockquote>
+<p><code>Windows + R = C:\Users\%USERNAME%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine</code></p>
+</blockquote>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li><p><code>Gci -Recurse -filter [.exe, .dll or .jar]</code> </p>
+<blockquote>
+<p>Command for .exe would be <code>Gci -Recurse -filter .exe</code></p>
+</blockquote>
+<p><br></p>
+</li>
+<li><p><code>get-eventlog -source &quot;Service Control manager&quot; -logname System | select message, timegenerated, username | out-gridview</code></p>
+</li>
+</ul>
+<ul>
+<li><code>cd ~\Desktop &amp; Get-WinEvent Microsoft-Windows-Kernel-PnP/Configuration | findstr 410 &gt; usb.log</code></li>
+</ul>
+<ul>
+<li><code>Test-NetConnection</code> <blockquote>
+<p>VPN detection.</p>
+</blockquote>
+</li>
+</ul>
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+
+<h3 align="center">Event Viewer
+
+<h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════
+<br>
+
+</h3></h3></h3>
+
+<blockquote>
+<ul>
+<li>Operational<ol>
+<li>Application And Service Registry.<ol>
+<li>Microsoft.</li>
+<li>Windows.</li>
+<li>DriverFrameworks-UserMode.</li>
+<li>Operational.</li>
+<li>Enable registration.</li>
+<li>Reclick on operational.</li>
+<li>Filter current record.</li>
+<li>Paste these ids:<blockquote>
+<ul>
+<li>2003<ul>
+<li>2004</li>
+<li>2006</li>
+<li>2010</li>
+<li>2100</li>
+<li>2101</li>
+<li>2105</li>
+<li>2106</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p> <br></p>
+<blockquote>
+<ul>
+<li>Reg deletion detection<ol>
+<li>Open eventviewer.</li>
+<li>Click Security.</li>
+<li>Filter current record.</li>
+<li>In  &lt;All events&gt; put <code>1102</code>.</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<p><br></p>
+<blockquote>
+<ul>
+<li><p>Journal Deletion</p>
+<ol>
+<li>Open eventviewer.</li>
+<li>Click Application.</li>
+<li>Filter current record.</li>
+<li>In &quot;&lt;All events&gt;&quot; Put <code>3079</code>.
+<br></li>
+</ol>
+</li>
+<li><p>Kernel</p>
+<ol>
+<li>Applications and Services logs.</li>
+<li>Microsoft.</li>
+<li>Windows.</li>
+<li>Kernel-PnP.</li>
+<li>Device Configuration.</li>
+<li>Filter logs to <code>420</code> and only ban if any logs are from a USB.</li>
+</ol>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li><p><code>Microsoft-Windows-Partition/Diagnostic</code></p>
+<blockquote>
+<p>Shows every time a usb was plugged in.</p>
+</blockquote>
+<p><br></p>
+</li>
+<li><p><code>Microsoft-Windows-Kernel-PnP/Device Configuration</code></p>
+<blockquote>
+<p>Checks what was deleted.</p>
+</blockquote>
+<p><br></p>
+</li>
+<li><p><code>Microsoft-Windows-StorageSpaces-Driver/Operational</code></p>
+</li>
+</ul>
+<ul>
+<li><code>Microsoft-Windows-VolumeSnapshot-Driver/Operational</code></li>
+</ul>
