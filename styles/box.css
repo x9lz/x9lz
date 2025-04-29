@@ -1,8 +1,10 @@
 .header-container {
   margin: 0 auto;
+  
 }
 
 .words-wrapper {
+  
   font-size: 40px;
   font-weight: bold;
   text-align: center;
@@ -23,6 +25,7 @@
   display: inline-flex; /* ensures the box hugs content */
   align-items: baseline; 
   height: auto; 
+  
 }
 .words-wrapper .words {
   display: inline-block;
@@ -53,9 +56,9 @@
 .words-wrapper .words span.next {
   transform: translate(-50%, 100%);
 }
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .words-wrapper .words {
     width: var(--width-mobile) !important;
   }
-}
+}  */
 
