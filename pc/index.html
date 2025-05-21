@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="PC check time, bucko." property="og:title" />
-    <meta content="dodge and you're blacklisted" property="og:description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <meta content="PC checking guide" property="og:title" />
+    <meta content="Made by Altercation" property="og:description" />
     <meta content="https://x9lz.xyz/pc" property="og:url" />
     <meta content="https://files.catbox.moe/fkjscg.webp" property="og:image" />
     <meta content="#fcba03" data-react-helmet="true" name="theme-color" />
@@ -29,13 +29,27 @@
       <h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════</h3>
       <h3 align="center">Registry editor Keys</h3>
       <h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════</h3>
-      <ul>        
+      <ul>                 
+        <li>
+          <p>
+            <code
+              >HKEY_CURRENT_USER\SOFTWARE\WinRAR\ArcHistory</code
+            >
+          </p>
+        </li>       
         <li>
           <p><code>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Tracing\</code></p>
         </li>
         <li>
           <p>
             <code>HKEY_LOCAL_MACHINE\SOFTWARE\Clients\StartMenuInternet</code>
+          </p>
+        </li>
+        <li>
+          <p>
+            <code
+              >Computer\HKEY_CURRENT_USER\SOFTWARE\WinRAR\DialogEditHistory\ArcName</code
+            >
           </p>
         </li>  
         <li>
@@ -69,6 +83,7 @@
             >
           </p>
         </li>
+        
         <li>
           <p>
             <code
@@ -90,10 +105,20 @@
             >
           </p>
         </li>
+        
+
+                
         <li>
           <p>
             <code
               >HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\CIDSizeMRU</code
+            >
+          </p>
+        </li>
+        <li>
+          <p>
+            <code
+              >Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Applets\Wordpad\Recent File List</code
             >
           </p>
         </li>
@@ -115,6 +140,13 @@
           <p>
             <code
               >HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\ComDlg32\LastVisitedPidlMRU</code
+            >
+          </p>
+        </li> 
+        <li>
+          <p>
+            <code
+              >Computer\HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FeatureUsage\ShowJumpView</code
             >
           </p>
         </li>
@@ -162,7 +194,7 @@
         <li>
           <u><p>
             <a href="https://processhacker.sourceforge.io/nightly.php"
-              >Download Process Hacker</a
+              >Download System Informer</a
             >
           </p>
         </u>
@@ -217,14 +249,14 @@
         <li>Any type of VPN will appear below.</li>
       </ol>
       <h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════</h3>
-      <h3 align="center">Process Hacker Various Searches</h3>
+      <h3 align="center">System Informer Various Searches</h3>
       <h3 align="center">══════════════════════ ⋆★⋆ ══════════════════════</h3>
       <blockquote>
         <ul>
           <li>
             PCAClient
             <ol>
-              <li>Open Process Hacker as admin.</li>
+              <li>Open System Informer as admin.</li>
               <li>Search <code>explorer</code>.</li>
               <li>Scan and filter strings with <code>pcaclient</code>.</li>
               <li>Save to a text file and open it.</li>
@@ -238,7 +270,7 @@
           <li>
             BFE Search
             <ol>
-              <li>Open Process Hacker as admin.</li>
+              <li>Open System Informer as admin.</li>
               <li>Search up <code>BFE</code>.</li>
               <li>Scan and filter strings with <code>UDP QUERY USER</code></li>
             </ol>
@@ -254,7 +286,7 @@
           <li>
             Analyze CPU Usage
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search <code>explorer.exe</code>.</li>
               <li>
                 Search and filter strings with cpu usage and analyze the
@@ -267,10 +299,68 @@
       <br />
       <blockquote>
         <ul>
+          <li>Browser methods
+            <ol>
+              <li>Open System Informer.</li>
+              <li>Search for main browser name.</li>
+              <li>Scan and filter strings with the following: </li>
+
+            </ol>
+            <blockquote>
+              <ul>
+                <li><code>drive.google.com</code></li>
+                <li><code>mediafire.com/</code></li>
+                <li><code>cdn.discordapp.com/attachments</code></li>
+                <li><code>mega.nz</code></li>
+              </ul>
+            </blockquote>
+          </li>
+        </ul>
+      </blockquote>
+      <br />
+      <blockquote>
+        <ul>
+          <li>Registry methods 
+            <ol>
+              <li>Open System Informer.</li>
+              <li>Search for Registry.</li>
+              <li>Scan and filter strings with the following: </li>
+
+            </ol>
+            <blockquote>
+              <ul>
+                <li>
+                  <code>:\</code>
+                  <ul>
+                    <li>
+                      <code>FriendlyAppName</code>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <code>RASAPI32</code>
+                  <blockquote>Renamed Files.</blockquote>
+                </li>
+                <li>
+                  <code>SIGN.MEDIA</code>
+                  <blockquote>.exes on USB.</blockquote>
+                </li>
+                <li>
+                  <code>Volume{</code>
+                  <blockquote>Cheats on partitions.</blockquote>
+                </li>
+              </ul>
+            </blockquote>
+          </li>
+        </ul>
+      </blockquote>
+      <br />
+      <blockquote>
+        <ul>
           <li>
             <p>Diagtrack search</p>
             <ol>
-              <li>Open Process Hacker as admin.</li>
+              <li>Open System Informer as admin.</li>
               <li>Search <code>diagtrack</code>.</li>
               <li>Scan for strings.</li>
             </ol>
@@ -278,7 +368,7 @@
               <p>
                 This is how we find out if they’ve deleted their journal, ect.
                 You find this out by entering the following as filters in
-                process hacker:
+                System Informer:
               </p>
               <blockquote>
                 <ul>
@@ -361,7 +451,7 @@
           <li>
             DLLhost Search
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search <code>dllhost</code>.</li>
               <li>
                 Scan and filter strings with <code>\users\</code> then
@@ -375,9 +465,47 @@
       <blockquote>
         <ul>
           <li>
+            CSRSS
+            <ol>
+              <li>Open System Informer.</li>
+              <li>Search <code>csrss</code>.</li>
+              <li>
+                Scan for strings
+              </li>
+              <li>Filter with regex (case insensitive): </li>
+              <blockquote>
+                <ul>
+                  <li>.exe: <code>^[A-Z]:\\.+\.(exe)$</code></li>
+                  <li>.dll: <code>^[A-Z]:\\.+\.(dll)$</code></li>
+                </ul>
+              </blockquote>
+              <li>While holding down shift, click copy (bottom right).</li>
+              <li>Right click, copy result.</li>
+              <li>Open a new text file, paste in everything.</li>
+            </ol>
+          </li>
+        </ul>
+      </blockquote>
+      <br>
+      <blockquote>
+        <ul>
+          <li>
+            cdpu
+            <ol>
+              <li>Open System Informer.</li>
+              <li>Search <code>cdpu</code></li>
+              <li>Scan and filter <code>downloads</code>.</li>
+            </ol>
+          </li>
+        </ul>
+      </blockquote>
+      <br>
+      <blockquote>
+        <ul>
+          <li>
             DNSCache
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search <code>dns cache</code>.</li>
               <li>Scan and filter the following:</li>
             </ol>
@@ -401,7 +529,7 @@
           <li>
             DPS Service
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search for DPS service.</li>
               <li>Filter the following:</li>
             </ol>
@@ -436,7 +564,7 @@
           <li>
             Event log
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search up <code>eventlog</code>.</li>
               <li>View the process and look for <code>c:\users</code>.</li>
               <li>Put <code>.exe</code>.</li>
@@ -450,7 +578,7 @@
           <li>
             Explorer strings
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search <code>explorer.exe</code>.</li>
               <li>Scan and filter the following:</li>
             </ol>
@@ -485,7 +613,7 @@
           <li>
             PCASV
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search for the <code>pcasv</code> process.</li>
               <li>Scan and filter with</li>
             </ol>
@@ -512,7 +640,7 @@
           <li>
             <h4 id="mpssvc">MPSSVC</h4>
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search for <code>mpssvc</code>.</li>
               <li>Scan and filter with the following:</li>
             </ol>
@@ -542,7 +670,7 @@
           <li>
             <p>MSMPENG</p>
             <ol>
-              <li>Open Process Hacker as admin.</li>
+              <li>Open System Informer as admin.</li>
               <li>
                 Search <code>msmpeng</code> (and here we are going to see what
                 was executed through cmd).
@@ -632,7 +760,7 @@
           <li>
             Runtime Broker
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search and scan <code>RuntimeBroker.exe</code>.</li>
               <li>Filter with:</li>
             </ol>
@@ -661,7 +789,7 @@
           <li>
             SearchApp
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search and scan <code>SearchApp.exe</code>.</li>
               <li>Filter the following:</li>
             </ol>
@@ -690,7 +818,7 @@
           <li>
             SearchIndexer
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search and scan <code>SearchIndexer.exe</code>.</li>
               <li>Filter with the following:</li>
             </ol>
@@ -710,7 +838,7 @@
           <li>
             SGRM Broker
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search and scan <code>sgrmbroker</code>.</li>
               <li>Filter with processID.</li>
               <li>Upload to <a href="https://echo.ac/sgrm">Echo</a>.</li>
@@ -724,7 +852,7 @@
           <li>
             SiHost
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search and scan <code>sihost</code>.</li>
               <li>Filter with:</li>
             </ol>
@@ -747,7 +875,7 @@
           <li>
             SmartScreen
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search and scan <code>Smartscreen.exe</code>.</li>
               <li>Separate the values below:</li>
             </ol>
@@ -766,7 +894,7 @@
           <li>
             SysMain
             <ol>
-              <li>Open Process Hacker.</li>
+              <li>Open System Informer.</li>
               <li>Search and scan <code>sysmain</code>.</li>
               <li>Filter with:</li>
             </ol>
