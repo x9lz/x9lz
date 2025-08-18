@@ -1,28 +1,36 @@
 .words {
-  height: auto; 
+  padding-top: 2%;
+  padding-bottom: 2%; 
   white-space: nowrap;
-  padding-bottom: 3px;
   display: inline-flex; /* ensures the box hugs content */
-  align-items: baseline; 
   transition: --width 2s ease;
-  
+  font-size: clamp(2rem, 3vw, 3rem); /* min, preferred, max */
+
 }
 .words-wrapper {
+
+  height: 50px;
+  display: flex;
   font-size: 40px;
   font-weight: bold;
+  line-height: 50px;
   text-align: center;
+  align-items: center; 
+  padding: 0.5rem 1rem; /* even padding */
+  justify-content: center;  
 }
 .words-wrapper .css {
   color: #2ec4b6;
 }
 .words-wrapper .css .words  {
   display: flex;
+  max-width: 100%;
   align-items: center;
-
 }
 
 .words-wrapper .words {
   height: 50px;
+  line-height: 50px;
   position: relative;
   transition: all 1s;
   border-radius: 6px;
@@ -45,14 +53,15 @@
 }
 .words-wrapper .words span.current {
   opacity: 1;
-  padding-bottom: 0px;
   transform: translate(-50%, 0);
 
 }
+.current {
+  font-size: clamp(2rem, 3vw, 3rem); /* min, preferred, max */
+}
 
 .header-container {
-  margin: 0 auto;
-  
+  margin: 0 auto; 
 }
 /* 
 @media (max-width: 700px) {
