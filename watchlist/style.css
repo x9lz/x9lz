@@ -1,0 +1,10 @@
+@import url('https://fonts.cdnfonts.com/css/handwriting');
+html {
+    font-family: 'Handwriting', sans-serif;
+    background: url(assets/bg.jpeg);
+    background-size: cover;
+}
+
+body {
+    color: white;
+}
